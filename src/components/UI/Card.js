@@ -1,9 +1,8 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({ children }) => {
-  const classes = "card " + props.className;
-  // PR 테스트
+const Card = ({ children, className }) => {
+  const classes = "card " + className;
   return <div className={classes}>{children}</div>;
 };
 
